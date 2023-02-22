@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            background-color: #4a4a67;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            color: #af7a39;
+        }
+        p {
+            color: #fff;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiros passos em JavaScript</h1>
+
+    <p>Definindo variáveis</p>
+
+    <script>
+        var nome = window.prompt ('Qual o seu nome?')
+        window.alert ('Que bom te conhecer ' + nome + '!!!')
+        var n1 = Number(window.prompt ('Digite um número: '))
+        var n2 = Number(window.prompt ('Digite outro número: '))
+        var s = n1 + n2
+        //window.alert ('A soma dos valores é: ' + s) 
+        //ou pode escrever na forma da versão Ecma 6, mais recente
+
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+
+        document.write(`A soma dos valores é: ${s} <br/>`)
+        document.write(`Olá ${nome.toUpperCase()}! <br/>Seu nome tem ${nome.length} letras! <br/>`)
+
+    </script>
+    
+</body>
+</html>
