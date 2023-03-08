@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#bloco1 {
+            font: normal 20pt Arial;
+            background: #ffaa00;
+            color: #fff;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="bloco1">
+        Interagir...
+    </div>
+
+
+
+    <!-- <div id="bloco1" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interagir...
+    </div> -->
+
+
+    <!-- Para o HTML não ficar "poluído" declaramos os eventos dentro do JS utililizando .addEventListener, que será executado somente quando houver a ação -->
+
+
+
+    <!-- <script>
+        function clicar() {
+            var clic = window.document.getElementById('bloco1')
+            clic.innerText = 'Clicou!!'
+        }
+    </script> -->
+
+    <!-- quando tiver vários eventos em um mesmo elemento, pode-se declarar a var fora da function, NÃO É A MELHOR MANEIRA DE SE FAZER ISSO, por problemas de memória, mais a frente veremos outro recurso. -->
+
+
+    <script>
+        var clic = window.document.getElementById('bloco1')
+
+        clic.addEventListener('click', clicar)
+        clic.addEventListener('mouseenter', entrar)
+        clic.addEventListener('mouseout', sair)
+
+
+        function clicar() {
+            clic.innerText = 'Clicou!!'
+            clic.style.background = 'green'
+        }
+        function entrar() {
+            clic.innerText = 'Entrou!'
+        }
+        function sair() {
+            clic.innerText = 'Saiu!'
+            clic.style.background = '#ffaa00'
+        }
+    </script>
+    
+</body>
+</html>
