@@ -9,6 +9,7 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
         body {
             
@@ -41,16 +42,36 @@
     <h2>Pesquisa de Nacionalidade</h2>
     
     <p>
-        <label for="nome">Nome Completo:</label>
-        <input type="text" name="nome" id="nome">
+        <label for="nomes">Nome Completo:</label>
+        <input type="text" name="nomes" id="nomes" maxlength="50">
     </p>
     <p>
         <label for="pais">País de origem: </label>
-        <input type="text" name="pais" id="pais">
+        <input type="text" name="pais" id="pais" maxlength="20">
     </p>
-    <p><input type="button" value="Verificar"></p>
+    <p>
+        <label for="nasc">Data de nascimento: </label>
+        <input type="date" name="nasc" id="nasc">
+    </p>
+    <p>
+        <label for="mail">E-mail: </label>
+        <input type="email" name="mail" id="mail" maxlength="32">
+    </p>
+    <p><input type="button" value="Verificar" onclick="verifica()"></p>
+    <div id="resultado">
+
+    </div>
 
     <script>
+        function verifica() {
+            var nome = window.document.getElementById("nomes")
+            
+            // var origem = window.document.querySelector('input#pais')
+
+            var resul = window.document.querySelector('div#resultado')
+            resul.innerHTML = `<p>Nome: ${nome}</p>`
+            // resul.innerHTML += `<p>Nacionalidade: ${origem}</p>`
+    }
 
     </script>
      
