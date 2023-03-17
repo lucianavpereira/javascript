@@ -64,13 +64,12 @@
 
     <script>
         function verifica() {
-            var nome = window.document.getElementById("nomes")
+            var nome = window.document.querySelector('#nomes').value
+            var origem = window.document.querySelector('#pais').value
             
-            // var origem = window.document.querySelector('input#pais')
-
-            var resul = window.document.querySelector('div#resultado')
+            var resul = window.document.querySelector('#resultado')
             resul.innerHTML = `<p>Nome: ${nome}</p>`
-            // resul.innerHTML += `<p>Nacionalidade: ${origem}</p>`
+            resul.innerHTML += `<p>Nacionalidade: ${origem}</p>`
     }
 
     </script>
