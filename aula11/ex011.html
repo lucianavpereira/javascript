@@ -25,14 +25,17 @@
             gap: 30px;
         }
         input {
-            font-size: 20px;
+            width: 180px;
+            font-size: 24px;
             border-radius: 5px;
             cursor: pointer;
-            background: rgb(127, 68, 153);
+            background: rgb(132, 103, 144);
         }
         input:hover {
-            background: rgba(99, 50, 120, 0.548);
+            background: rgba(39, 6, 53, 0.548);
         }
+        
+        
         
     </style>
 </head>
@@ -51,25 +54,44 @@
     </p>
     <p>
         <label for="nasc">Data de nascimento: </label>
-        <input type="date" name="nasc" id="nasc">
+        <input type="date" name="nasceu" id="nasceu" value="dd-mm-yyyy">
     </p>
     <p>
         <label for="mail">E-mail: </label>
         <input type="email" name="mail" id="mail" maxlength="32">
     </p>
     <p><input type="button" value="Verificar" onclick="verifica()"></p>
+    <p><input type="reset" value="Limpar" onclick="resetar()"></p>
     <div id="resultado">
-
+        
     </div>
 
     <script>
         function verifica() {
             var nome = window.document.querySelector('#nomes').value
             var origem = window.document.querySelector('#pais').value
+            var nasc = window.document.querySelector('#nasceu').value
+            var email = window.document.querySelector('#mail').value
             
             var resul = window.document.querySelector('#resultado')
-            resul.innerHTML = `<p>Nome: ${nome}</p>`
-            resul.innerHTML += `<p>Nacionalidade: ${origem}</p>`
+
+            if (origem == 'Brasil') {
+                resul.innerHTML=  `<p><strong>Você é Brasileiro(a)!!!</strong></p><br>`
+                resul.innerHTML += `<p>Nome: ${nome}</p>`
+                resul.innerHTML += `<p>Nacionalidade: ${origem}</p>`
+                resul.innerHTML += `<p>Data de Nascimento: ${nasc}</p>`
+                resul.innerHTML += `<p>E-mail: ${email}</p>`
+            } else {
+                resul.innerHTML=  `<p><strong>Você é Estrangeiro(a)!!!</strong></p><br>`
+                resul.innerHTML += `<p>Nome: ${nome}</p>`
+                resul.innerHTML += `<p>Nacionalidade: ${origem}</p>`
+            }
+
+            function resetar() {
+
+            }
+
+            
     }
 
     </script>
