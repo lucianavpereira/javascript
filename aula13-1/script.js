@@ -3,7 +3,7 @@ function carregar() {
     var foto = window.document.getElementById('foto')
     var data = new Date()
     // var hora = data.getHours()
-    var hora = 19
+    var hora = 16
     dia.innerHTML = `Agora são ${hora} horas`
     if (hora >= 0 && hora <12) {
         // Bom dia
