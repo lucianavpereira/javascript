@@ -20,23 +20,34 @@ header {
 
 section {
     background: whitesmoke;
-    padding: 30px;
+    padding: 20px;
     width: 500px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.353);
     margin: auto;
 }
 
-/* div {
-    padding: 15px;
+img#foto {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+#imagem {
     text-align: center;
 }
 
-section > div#imagem > img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-} */
+p {
+    padding: 10px;
+}
+
+#jornada {
+    text-align: center;
+}
+
+#resul {
+    text-align: center;
+}
 
 footer {
     text-align: center;
