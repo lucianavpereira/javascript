@@ -28,21 +28,7 @@ section {
 }
 
 p {
-    padding: 10px;
-}
-
-#foto {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-}
-
-#imagem {
-    text-align: center;
-}
-
-#resul {
-    text-align: center;
+    padding: 8px;
 }
 
 footer {
