@@ -8,7 +8,7 @@ function calcular() {
 
     if (tbp >= 0 && tbp <= 10) {
         for(var tbp = 0; tbp <=10; tbp++){
-            window.alert(calc)
+            
         }
 
         // while (tb >= 0 && tb <= 10) {
