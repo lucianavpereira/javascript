@@ -1,7 +1,7 @@
-for(var c = 1;c <= 10;c++) {
-    console.log(c)
-}
-console.log('FIM!')
+// for(var c = 1;c <= 10;c++) {
+//     console.log(c)
+// }
+// console.log('FIM!')
 
 
 
@@ -31,3 +31,14 @@ console.log('FIM!')
 // console.log('tudo legal?')
 // console.log('tudo legal?')
 // console.log('tudo legal?')
+
+
+var tb = 0 // value de select
+var num = 7 // valor digitado
+var calc = tb*num
+
+while (tb >= 0 && tb <= 10) {
+    console.log(tb*num)
+    tb++
+}
+
