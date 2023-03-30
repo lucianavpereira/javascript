@@ -2,8 +2,8 @@ function carregar() {
     var dia = window.document.getElementById('mensagem')
     var foto = window.document.getElementById('foto')
     var data = new Date()
-    // var hora = data.getHours()
-    var hora = 16
+    var hora = data.getHours()
+    // var hora = 20
     dia.innerHTML = `Agora são ${hora} horas`
     if (hora >= 0 && hora <12) {
         // Bom dia

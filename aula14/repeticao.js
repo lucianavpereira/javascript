@@ -33,12 +33,21 @@
 // console.log('tudo legal?')
 
 
-var tb = 0 // value de select
-var num = 7 // valor digitado
-var calc = tb*num
+// var tb = 0 // value de select
+// var num = 7 // valor digitado
+// var calc = tb*num
 
-while (tb >= 0 && tb <= 10) {
-    console.log(tb*num)
-    tb++
+// while (tb >= 0 && tb <= 10) {
+//     console.log(tb*num)
+//     tb++
+// }
+
+
+
+
+
+
+for (var c = 0; c <= 10; c=c+2) {
+    console.log(c)
 }
 
