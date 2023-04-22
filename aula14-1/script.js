@@ -5,19 +5,15 @@ function contar() {
 
     var res = window.document.querySelector('#res')
 
-    if (inicio <= 0) {
+    if (inicio <= 0 || final <= 0 || passo <=0) {
         window.alert('Valor inválido!')
-        } else if (final <= 0) {
-            window.alert('Valor inválido!')
-        } else if (passo <= 0) {
-            window.alert('Valor inválido!')    
-        } else if (inicio >= 1) {
-            while (inicio <= final){
-                inicio++
-            }            
-           
+        } else {
+        for(var c = inicio; c <= final; c += passo){
+            res.innerHTML += `   ${c}`
+        }
         }
 
-        res.innerHTML = (`Contando...  ${  inicio}`)           
+
+                  
        
 }
