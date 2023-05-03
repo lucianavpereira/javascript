@@ -34,7 +34,7 @@
 
 var num = [9, 4, 1, 5, 3]
 console.log(num)
-var pos = num.indexOf(2)
+var pos = num.indexOf(3)
 if (pos == -1) {
     console.log(`O valor não foi encontrado.`)
 } else {
